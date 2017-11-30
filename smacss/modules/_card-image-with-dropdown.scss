@@ -2,6 +2,10 @@
     border: 1px solid #ddd;
     border-radius: .3em;
     position: relative;
+    margin-bottom: 3em;
+    @media screen and (min-width: 576px) {
+        margin-bottom: 0em;
+    }
     @include e(dropdown-container) {
         display: flex;
         justify-content: flex-start;
