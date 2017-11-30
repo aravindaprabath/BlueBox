@@ -1,0 +1,16 @@
+.component-name {
+    font-size: 1rem;
+    border-bottom: 1px solid $border--gray;
+    margin-top: 4em;
+    padding-bottom: 1em;
+    color: $gray;
+    margin-bottom: 2em;
+}
+
+.content-break-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 9em;
+}

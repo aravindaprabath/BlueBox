@@ -1,0 +1,85 @@
+    .user-profile-container {
+        max-width: 100%;
+        height: 30vh;
+        @include e(cover-image) {
+            width: 100%;
+            height: 70%;
+            background-image: url("../images/cover.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            @media screen and (min-width: 768px) {
+                height: 100%;
+            }
+        }
+        @include e(data) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            top: 14em;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                margin: 0em 5em;
+                justify-content: flex-start;
+                align-items: flex-start;
+                top: 5em;
+            }
+            @include e(image) {
+                text-align: center;
+                border: .3em solid $white;
+                border-radius: .3em;
+                background: $white;
+                width: 10em;
+                height: 10em;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (min-width: 768px) {
+                    position: relative;
+                    top: -1em;
+                    height: 100%;
+                    align-items: flex-start;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @include e(name) {
+                text-align: center;
+                margin: 1.2em 0em;
+                h1 {
+                    font-size: 1.7rem;
+                    margin: 0 0 .1em;
+                }
+                h2 {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+                @media screen and (min-width: 768px) {
+                    text-align: left;
+                    color: $white;
+                    margin-left: 2em;
+                    margin-right: auto;
+                }
+            }
+            @include e(edit-button) {
+                text-align: center;
+                color: $navy;
+                &:hover {
+                    cursor: pointer;
+                }
+                @media screen and (min-width: 768px) {
+                    margin: 1.2em 0em;
+                    color: $alpha;
+                }
+            }
+        }
+    }

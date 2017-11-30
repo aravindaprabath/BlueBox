@@ -1,0 +1,196 @@
+.custom-font-styles {
+    padding: 2em;
+    @include e(roboto) {
+        h1,
+        h2,
+        p {
+            position: relative;
+        }
+        h1 {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "h1";
+                display: inline-block;
+                position: absolute;
+                top: -30px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        h2 {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "h2";
+                display: inline-block;
+                position: absolute;
+                top: -30px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        p {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "p";
+                display: inline-block;
+                position: absolute;
+                top: -45px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        @include m(h0-ttl) {
+            font-size: 7rem;
+            word-wrap: break-word;
+            margin: 0 0 .2em;
+            line-height: 1em;
+            letter-spacing: .02em;
+            font-weight: bold;
+            @include m(color) {
+                color: $nine;
+            }
+            @media screen and (min-width: 576px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 6em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 992px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+        }
+    }
+    @include e(playfair) {
+        h1,
+        h2,
+        p {
+            font-family: 'Playfair Display', serif;
+            position: relative;
+        }
+        h1 {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "h1";
+                display: inline-block;
+                position: absolute;
+                top: -30px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        h2 {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "h2";
+                display: inline-block;
+                position: absolute;
+                top: -30px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        p {
+            &::before {
+                font-size: .9rem;
+                padding: 1.3em;
+                content: "p";
+                display: inline-block;
+                position: absolute;
+                top: -45px;
+                right: 0px;
+                width: 2em;
+                height: 2em;
+                background: red;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        @include m(h0-ttl) {
+            font-family: 'Playfair Display', serif;
+            font-size: 7em;
+            word-wrap: break-word;
+            margin: 0 0 .2em;
+            line-height: 1em;
+            letter-spacing: .02em;
+            @include m(color) {
+                color: $nine;
+            }
+            @media screen and (min-width: 576px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 6em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 992px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 8em;
+                margin: 0 0 .1em;
+                letter-spacing: .03em;
+            }
+        }
+    }
+}
