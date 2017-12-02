@@ -27,7 +27,7 @@ var imageCardDropFunc = function (e) {
         for (var n = 0; n < imageCardDropmenuContainers.length; n++) {
             console.log(imageCardDropmenuContainers[n]);
 
-            if (imageCardDropmenuContainers[n].classList.contains("drop-menu-card-rapper__dropdown-container__link-wrapper") && imageCardDropmenuContainers[n] == imageCardDropmenuContainers[1]) {
+            if (imageCardDropmenuContainers[n].classList.contains("drop-menu-card-rapper__dropdown-container__link-wrapper") && imageCardDropmenuContainers[n] == imageCardDropmenuContainers[0]) {
                 imageCardDropmenuContainers[n].classList.toggle("drop-menu-card-rapper__dropdown-container__link-wrapper--tog");
                 break;
             };

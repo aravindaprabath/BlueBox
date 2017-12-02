@@ -83,40 +83,11 @@
             height: auto;
         }
     }
-    @include e(text-container) {
-        text-align: center;
-        margin: 2em;
-        @media screen and (min-width: 768px) {
-            margin: 3em;
-        }
-        h1 {
-            font-size: 2em;
-            font-weight: 500;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            display: -webkit-box;
-            margin-bottom: 1em;
-        }
-        p {
-            max-height: 7em;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.6em;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            display: -webkit-box;
-            margin-bottom: 3em;
-        }
-    }
     @include e(text-container-classic) {
         text-align: center;
         margin: 2em;
         @media screen and (min-width: 768px) {
-            margin: 3em;
+            margin: 3em 5em 3em 5em;
         }
         h1 {
             font-size: 2.4em;
