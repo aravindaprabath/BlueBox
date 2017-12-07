@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     @media screen and (min-width: 768px) {
         flex-direction: column;
     }
@@ -60,7 +61,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0px;
+    top: -9px;
     @media screen and (min-width: 768px) {
         margin-top: -4em;
         width: 100%;

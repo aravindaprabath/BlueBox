@@ -1,100 +1,153 @@
-.color-container {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.color-box {
+    height: 12em;
+    margin: .2em;
+    border-radius: 4px;
+    text-align: center;
+    border: .01em solid #edf1ff;
     h2 {
-        font-size: 1.2rem;
-        margin: 0em;
+        font-size: 1em;
     }
     h3 {
-        font-size: 1rem;
+        font-size: .9em;
     }
-    @include e(color-box) {
-        flex: 1 12em;
-        height: 12em;
-        margin: .2em;
+    @include m(alpha) {
+        background-color: $alpha;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        color: gray;
+    }
+    @include m(romeo) {
+        background-color: $romeo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: white;
-        border-radius: 4px;
-        &>div {
-            opacity: .5;
-            transition: opacity .3s ease-in-out;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        &:hover {
-            cursor: pointer;
-            &>div {
-                opacity: 1;
-            }
-        }
-        @include m(alpha) {
-            background-color: $alpha;
-        }
-        @include m(romeo) {
-            background-color: $romeo;
-        }
-        @include m(viana) {
-            background-color: $viana;
-        }
-        @include m(indiana) {
-            background-color: $indiana;
-        }
-        @include m(november) {
-            background-color: $november;
-        }
-        @include m(decota) {
-            background-color: $decota;
-        }
-        @include m(seven) {
-            background-color: $seven;
-        }
-        @include m(eight) {
-            background-color: $eight;
-        }
-        @include m(nine) {
-            background-color: $nine;
-        }
-        @include m(ten) {
-            background-color: $ten;
-        }
-        @include m(eleven) {
-            background-color: $eleven;
-        }
-        @include m(twelve) {
-            background-color: $twelve;
-        }
-        @include m(therteen) {
-            background-color: $thirteen;
-        }
-        @include m(fourteen) {
-            background-color: $fourteen;
-        }
-        @include m(fifteen) {
-            background-color: $fifteen;
-        }
-        @include m(sixteen) {
-            background-color: $sixteen;
-        }
-        @include m(seventeen) {
-            background-color: $seventeen;
-        }
-        @include m(eighteen) {
-            background-color: $eighteen;
-        }
-        @include m(nineteen) {
-            background-color: $nineteen;
-        }
-        @include m(twenty) {
-            background-color: $twenty;
-        }
+    }
+    @include m(viana) {
+        background-color: $viana;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(indiana) {
+        background-color: $indiana;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(november) {
+        background-color: $november;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(decota) {
+        background-color: $decota;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(seven) {
+        background-color: $seven;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(eight) {
+        background-color: $eight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(nine) {
+        background-color: $nine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(ten) {
+        background-color: $ten;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(eleven) {
+        background-color: $eleven;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(twelve) {
+        background-color: $twelve;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(therteen) {
+        background-color: $thirteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(fourteen) {
+        background-color: $fourteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(fifteen) {
+        background-color: $fifteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(sixteen) {
+        background-color: $sixteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(seventeen) {
+        background-color: $seventeen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(eighteen) {
+        background-color: $eighteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(nineteen) {
+        background-color: $nineteen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    @include m(twenty) {
+        background-color: $twenty;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
     }
 }
