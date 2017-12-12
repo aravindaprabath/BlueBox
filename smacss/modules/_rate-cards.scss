@@ -1,0 +1,105 @@
+.rate-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "image " "logo " "text ";
+    border: 1px solid rgb(221, 221, 221);
+    @media screen and (min-width: 576px) {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "image image" "logo text"
+    }
+    @include e(image) {
+        text-align: center;
+        background-color: red;
+        grid-area: image;
+        height: auto;
+        max-height: 15em;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+    @include e(play-button) {
+        width: 3em;
+        height: 3em;
+        background-color: #DC3535;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        i {
+            display: block;
+            font-size: .9em;
+            color: white;
+        }
+    }
+    @include e(logo) {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        img {
+            width: 5em;
+            height: auto;
+            margin: 1.5em;
+        }
+    }
+    @include e(text) {
+        grid-area: text;
+        text-align: left;
+        padding: 0em 1em;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 1.7em 0em;
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.800);
+        }
+        p {
+            font-size: .8em;
+            line-height: 1.5em;
+            color: rgba(0, 0, 0, 0.800);
+            max-height: 3em;
+            overflow: hidden;
+            margin: 0em;
+        }
+        & p:first-of-type {
+            margin-bottom: 1em;
+        }
+    }
+    @include e(country) {
+        font-size: .4em;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.400);
+        font-weight: 200;
+    }
+    @include e(rate-stars) {
+        color: #FFAA00;
+        font-size: 1.2em;
+    }
+    @include e(rate-users) {
+        font-size: .7em;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.400);
+        font-weight: 200;
+    }
+}
