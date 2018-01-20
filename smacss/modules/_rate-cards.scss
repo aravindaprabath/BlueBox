@@ -46,12 +46,12 @@
     }
     @include e(logo) {
         grid-area: logo;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
         align-items: center;
-        display: flex;
-        justify-self: center;
-        align-self: center;
+        
         img {
             width: 5em;
             height: auto;
@@ -104,3 +104,4 @@
         
     }
 }
+
