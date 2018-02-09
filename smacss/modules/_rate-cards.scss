@@ -15,33 +15,36 @@
         grid-area: image;
         height: auto;
         max-height: 15em;
-        position: relative;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         img {
             max-width: 100%;
             min-width: 100%;
             min-height: 100%;
+            grid-column: 1/1;
+            grid-row: 1/1
         }
     }
     @include e(play-button) {
+        grid-column: 1/1;
+            grid-row: 1/1;
         width: 3em;
         height: 3em;
-        background-color: #DC3535;
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        background-color: #DC3535;        
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
+        justify-self: end;
+        align-self: end;
+       
         i {
             display: block;
             font-size: .9em;
             color: white;
+            justify-self: center;
+        align-self: center;
         }
     }
     @include e(logo) {
