@@ -1,6 +1,5 @@
 .base-font-styles-container {
-    padding: 2em;
-    border: 1px solid red;
+    padding: 3em;
     @include e(roboto) {
         h1,
         h2,
