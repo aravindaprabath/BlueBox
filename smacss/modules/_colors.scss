@@ -1,9 +1,24 @@
+// Color palet grid
+.color-palet-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0em 3em;
+    }
+    @media screen and (min-width: 992px) {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
 .color-box {
     height: 12em;
-    margin: .2em;
-    border-radius: 4px;
     text-align: center;
-    border: .01em solid #edf1ff;
     h2 {
         font-size: 1em;
     }
