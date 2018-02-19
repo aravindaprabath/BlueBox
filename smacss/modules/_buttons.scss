@@ -1,0 +1,24 @@
+.bb-btn-primary{
+    width: auto;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 5em;
+    background: $twenty;
+    border: none;
+    color: white;
+
+    &:hover{
+        cursor: pointer;
+        background: $twenty;
+    }
+    &:active{
+        cursor: pointer;
+        background: $twenty;
+    }
+    &:focus{
+        cursor: pointer;
+        background: $twenty;
+        border: none;
+
+    }
+}

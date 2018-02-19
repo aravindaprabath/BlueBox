@@ -3,38 +3,61 @@
     min-height: 100vh;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 5em 3em;
-    background-image: url("../../images/8.jpeg");
+    padding: 1em;
+    background-image: url("../images/8.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 5em 3em;
+
+    }
 }
 
 .form-container {
+    padding: 1.5em;
     width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+    height: auto;
     background-color: #ffffff9c;
-    padding: 7em 6em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    @include e(text) {}
+    justify-items: start;
+    align-items: start;
+    padding: 4em 3em;
+
+
+    @media screen and (min-width: 768px) {
+        padding: 7em 6em;
+
+    }
+    @include e(text) {
+        height: auto;
+       
+    }
     @include e(form) {
-        padding-top: 1em;
+        width: 100%;
+        height: auto;
+        padding-top: 2em;
         input {
             height: 3.2em;
-            width: 25em;
+            width: 100%;
         }
         .form-group {
             margin-bottom: .5em;
         }
     }
     @include e(buttons) {
+        width: 100%;
+        height: auto;
         display: grid;
-        width: 25em;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         @media screen and (min-width: 768px) {
@@ -63,10 +86,7 @@
                 grid-column: 2/3;
                 grid-row: 1/2;
             }
-            p {
-                margin: 0em;
-                font-size: .8em;
-            }
+           
         }
         @include e(forgot-password) {
             display: grid;
@@ -78,10 +98,7 @@
                 grid-column: 3/4;
                 grid-row: 1/2;
             }
-            p {
-                margin: 0em;
-                font-size: .8em;
-            }
+            
         }
     }
 }
