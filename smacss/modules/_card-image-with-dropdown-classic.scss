@@ -102,17 +102,16 @@
             font-family: 'Playfair Display', serif;
             color: #333333;
             display: block;
-height: 51px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+            height: 51px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
             @media screen and (min-width: 768px) {
                 font-size: 2em;
-                
             }
         }
         p {
-            max-height: 7em;
+            max-height: 8em;
             overflow: hidden;
             text-overflow: ellipsis;
             line-height: 1.6em;
