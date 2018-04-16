@@ -14,21 +14,24 @@
         justify-self: center;
         height: 35vh;
         @media screen and (min-width: 1200px) {
-            width: 100vw;
+            // width: 100vw;
             height: 33vh;
             display: block;
         }
     }
     @include e(rocket) {
-        width: 50vw;
+        width: 90vw;
         height: 50vh;
         justify-self: center;
         align-self: center;
         object-fit: cover;
-        border: 1px solid pink;
+        @media screen and(min-width: 768px) {
+            object-fit: contain;
+            width: 90vw;
+        }
         @media screen and(min-width: 1200px) {
             object-fit: contain;
-            width: 66vw;
+            width: 68vw;
         }
     }
     @include e(text) {
@@ -36,7 +39,10 @@
         width: auto;
         position: absolute;
         z-index: 9;
-        padding: 1.5em;
-        margin-bottom: 4em;
+        padding: 1em 1em 2em 1em;
+        height: auto;
+        @media screen and(min-width: 768px) {
+            padding: 1em 10em 2em 10em;
+        }
     }
 }
