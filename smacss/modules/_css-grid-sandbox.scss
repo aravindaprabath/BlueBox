@@ -1,0 +1,20 @@
+.card-holder {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card-test {
+    width: 25em;
+    height: 25em;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
