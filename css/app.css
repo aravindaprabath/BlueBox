@@ -3,9 +3,8 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,600i,700");
 html,
 body,
 div,
@@ -191,7 +190,7 @@ bb-hr {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -230,6 +229,7 @@ p {
   letter-spacing: .03em;
   line-height: 1.6em;
   margin: 0 0 .5em;
+  color: #7b8b8e;
 }
 @media screen and (min-width: 768px) {
   p {
@@ -963,12 +963,12 @@ a:hover {
 
 .grid-base-font-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(38em, 1fr));
   grid-template-rows: auto;
 }
 @media screen and (min-width: 576px) {
   .grid-base-font-container {
-    grid-template-columns: repeat(auto-fit, minmax(27em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(38em, 1fr));
   }
 }
 
@@ -978,6 +978,7 @@ a:hover {
 .base-font-styles-container__roboto h1,
 .base-font-styles-container__roboto h2,
 .base-font-styles-container__roboto p {
+  font-family: 'Roboto', sans-serif !important;
   position: relative;
 }
 .base-font-styles-container__roboto h1::before {
@@ -1033,6 +1034,7 @@ a:hover {
   color: white;
 }
 .base-font-styles-container__roboto--h0-ttl {
+  font-family: 'Roboto', serif;
   font-size: 7em;
   word-wrap: break-word;
   margin: 0 0 .2em;
@@ -1040,36 +1042,72 @@ a:hover {
   letter-spacing: .02em;
   font-weight: bold;
 }
-.base-font-styles-container__roboto--h0-ttl--color {
-  color: #ec7523;
+.base-font-styles-container__poppins h1,
+.base-font-styles-container__poppins h2,
+.base-font-styles-container__poppins p {
+  font-family: 'Poppins', serif;
+  position: relative;
 }
-@media screen and (min-width: 576px) {
-  .base-font-styles-container__roboto--h0-ttl {
-    font-size: 9em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__poppins h1::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "h1";
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
 }
-@media screen and (min-width: 768px) {
-  .base-font-styles-container__roboto--h0-ttl {
-    font-size: 9em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__poppins h2::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "h2";
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-@media screen and (min-width: 992px) {
-  .base-font-styles-container__roboto--h0-ttl {
-    font-size: 7.5em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__poppins p::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "p";
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-@media screen and (min-width: 1200px) {
-  .base-font-styles-container__roboto--h0-ttl {
-    font-size: 7em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__poppins--h0-ttl {
+  font-family: 'Poppins', serif;
+  font-size: 7em;
+  word-wrap: break-word;
+  margin: 0 0 .2em;
+  line-height: 1em;
+  letter-spacing: .02em;
+  font-weight: bold;
 }
 .base-font-styles-container__playfair h1,
 .base-font-styles-container__playfair h2,
@@ -1137,36 +1175,71 @@ a:hover {
   line-height: 1em;
   letter-spacing: .02em;
 }
-.base-font-styles-container__playfair--h0-ttl--color {
-  color: #ec7523;
+.base-font-styles-container__playfair h1,
+.base-font-styles-container__playfair h2,
+.base-font-styles-container__playfair p {
+  font-family: 'Playfair Display', serif;
+  position: relative;
 }
-@media screen and (min-width: 576px) {
-  .base-font-styles-container__playfair--h0-ttl {
-    font-size: 8em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__playfair h1::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "h1";
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
 }
-@media screen and (min-width: 768px) {
-  .base-font-styles-container__playfair--h0-ttl {
-    font-size: 9em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__playfair h2::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "h2";
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-@media screen and (min-width: 992px) {
-  .base-font-styles-container__playfair--h0-ttl {
-    font-size: 7.5em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__playfair p::before {
+  font-size: .9rem;
+  padding: .5em;
+  content: "p";
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  width: 2em;
+  height: 2em;
+  background: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-@media screen and (min-width: 1200px) {
-  .base-font-styles-container__playfair--h0-ttl {
-    font-size: 7em;
-    margin: 0 0 .1em;
-    letter-spacing: .03em;
-  }
+.base-font-styles-container__playfair--h0-ttl {
+  font-family: 'Playfair Display', serif;
+  font-size: 7em;
+  word-wrap: break-word;
+  margin: 0 0 .2em;
+  line-height: 1em;
+  letter-spacing: .02em;
 }
 
 .drop-menu-card-rapper {
